@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/bRCy43q/Rectangle-2-2.png",
+      "course_name": "Introduction to C Programming",
+      "details": "A beginner's guide to programming concepts.",
+      "credit": 3,
+      "price": 199.99
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/TWG7MCj/Rectangle-2-3.png",
+      "course_name": "Introduction to Algorithms",
+      "details": "A beginner's guide to programming concepts.",
+      "credit": 4,
+      "price": 249.99
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/YTppkkj/Rectangle-2-4.png",
+      "course_name": "Introduction to C++ for DSA",
+      "details": "A beginner's guide to programming concepts.",
+      "credit": 3,
+      "price": 179.99
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/tb8bqRb/Rectangle-3.png",
+      "course_name": "Basic Data Structures ",
+      "details": "A beginner's guide to programming concepts.",
+      "credit": 4,
+      "price": 299.99
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/T86fdZw/Rectangle-2.png",
+      "course_name": "Introduction to OOP Python",
+      "details": "A beginner's guide to programming concepts.",
+      "credit": 3,
+      "price": 199.99
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/swTFmt2/Rectangle-2-5.png",
+      "course_name": "Software Engineering",
+      "details": " A beginner's guide to programming concepts.",
+      "credit": 3,
+      "price": 179.99
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/tJ5cGXj/Rectangle-3-1.png",
+      "course_name": "AWS, Cloud Computing",
+      "details": "A beginner's guide to programming concepts.",
+      "credit": 3,
+      "price": 199.99
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/HNypZjW/Rectangle-2-1.png",
+      "course_name": "Database (MySQL)",
+      "details":"A beginner's guide to programming concepts.",
+      "credit": 4,
+      "price": 249.99
+    },
+    {
+      "id": 9,
+      "img": "https://i.ibb.co/NTF9RgR/Rectangle-2-6.png",
+      "course_name": "Problem-Solving Part",
+      "details": "A beginner's guide to programming concepts.",
+      "credit": 4,
+      "price": 299.99
+    }
+  ]
