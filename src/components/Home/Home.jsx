@@ -43,6 +43,7 @@ const Home = () => {
     
     return (
         <div className='flex justify-between items ml-16 mt-10'>
+            
             <div className="card-container ml-12 mt-16 w-[950px] mx-auto grid grid-cols-3 gap-12"> 
                 { 
                 

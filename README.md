@@ -1,8 +1,8 @@
-# React + Vite
+##Add at least 3 Project features--
+1.clickable button
+2.change cart section value and using condition with alart.
+3.button click and set valu cart section
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Discuss how you managed the state in your assignment project.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+i manage state with array and initioal value with 0.and using props.
