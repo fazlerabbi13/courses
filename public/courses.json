@@ -5,7 +5,7 @@
       "course_name": "Introduction to C Programming",
       "details": "A beginner's guide to programming concepts.",
       "credit": 3,
-      "price": 199.99
+      "price": 10000
     },
     {
       "id": 2,
@@ -13,23 +13,23 @@
       "course_name": "Introduction to Algorithms",
       "details": "A beginner's guide to programming concepts.",
       "credit": 4,
-      "price": 249.99
+      "price": 20000
     },
     {
       "id": 3,
       "img": "https://i.ibb.co/YTppkkj/Rectangle-2-4.png",
       "course_name": "Introduction to C++ for DSA",
       "details": "A beginner's guide to programming concepts.",
-      "credit": 3,
-      "price": 179.99
+      "credit": 5,
+      "price": 12000
     },
     {
       "id": 4,
       "img": "https://i.ibb.co/tb8bqRb/Rectangle-3.png",
       "course_name": "Basic Data Structures ",
       "details": "A beginner's guide to programming concepts.",
-      "credit": 4,
-      "price": 299.99
+      "credit": 5,
+      "price": 10000
     },
     {
       "id": 5,
@@ -37,7 +37,7 @@
       "course_name": "Introduction to OOP Python",
       "details": "A beginner's guide to programming concepts.",
       "credit": 3,
-      "price": 199.99
+      "price": 13000
     },
     {
       "id": 6,
@@ -45,7 +45,7 @@
       "course_name": "Software Engineering",
       "details": " A beginner's guide to programming concepts.",
       "credit": 3,
-      "price": 179.99
+      "price": 19000
     },
     {
       "id": 7,
@@ -53,7 +53,7 @@
       "course_name": "AWS, Cloud ComputingA",
       "details": "A beginner's guide to programming concepts.",
       "credit": 3,
-      "price": 199.99
+      "price": 10000
     },
     {
       "id": 8,
@@ -61,7 +61,7 @@
       "course_name": "Database (MySQL)",
       "details":"A beginner's guide to programming concepts.",
       "credit": 4,
-      "price": 249.99
+      "price": 11000
     },
     {
       "id": 9,
@@ -69,6 +69,6 @@
       "course_name": "Problem-Solving Part",
       "details": "A beginner's guide to programming concepts.",
       "credit": 4,
-      "price": 299.99
+      "price": 9000
     }
   ]
