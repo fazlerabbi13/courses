@@ -6,7 +6,8 @@ const Home = () => {
 
     const [course ,setcourse] = useState([]);
     const [selectCourse,setSelectCourse] =useState([]);
-
+    const [creditRemaining ,setCreditRemaining] = useState(0);
+    const [totalCredit ,setTotalCredit] =useState(0);
     useEffect(() =>{
         fetch('courses.json')
         .then(res =>res.json())
@@ -16,17 +17,32 @@ const Home = () => {
 
     const handleSelectCourse =(course) => {
             const isExist =selectCourse.find((card) => card.id == course.id);
+            let count = course.credit;
             if(isExist){
               return alert(`exist`)
             }
             else{
+                selectCourse.forEach(card =>{
+                 count = count + card.credit;
+                });
+               
+                const hoursRemaining = 20 - count;
+                
+                if(totalCredit>20) {
+                    return alart("Your credit limitations over")
+                }
+                else{
+                    setTotalCredit(count);
+                setCreditRemaining(hoursRemaining);
                 setSelectCourse([...selectCourse,course]); 
+                }
             }
             
     }
-    console.log(selectCourse);
+
+    
     return (
-        <div className='flex justify-between items ml-16'>
+        <div className='flex justify-between items ml-16 mt-10'>
             <div className="card-container ml-12 mt-16 w-[950px] mx-auto grid grid-cols-3 gap-12"> 
                 { 
                 
@@ -53,8 +69,11 @@ const Home = () => {
                 
                 }
            </div>
-           <div className="cart mt-16 mr-7 w-[430px] mx-auto">
-            <Cart selectCourse ={selectCourse}></Cart>
+           <div className="cart mt-16 mr-3 w-[430px] mx-auto">
+    
+            <Cart selectCourse ={selectCourse}
+             creditRemaining={creditRemaining} 
+            totalCredit={totalCredit} ></Cart>
            </div>
         </div>
     );
