@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import {BiDollar} from 'react-icons/bi';
 import {BsBook} from 'react-icons/bs';
+import Cart from '../Cart/Cart';
 const Home = () => {
 
     const [course ,setcourse] = useState([]);
-
+    const [selectCourse,setSelectCourse] =useState([]);
 
     useEffect(() =>{
         fetch('courses.json')
@@ -12,6 +13,11 @@ const Home = () => {
         .then((data) => setcourse(data))
     
     },[]);
+
+    const handleSelectCourse =(course) => {
+            setSelectCourse([...selectCourse,course]);
+    }
+    console.log(selectCourse);
     return (
         <div className='flex justify-between items ml-16'>
             <div className="card-container ml-12 mt-16 w-[950px] mx-auto grid grid-cols-3 gap-12"> 
@@ -32,7 +38,7 @@ const Home = () => {
                     <p> Credit:{course.credit} hr</p>
                 </div>
              </div>
-                <button className='text-2xl rounded-lg mt-12 w-[306px] h-[50px] bg-sky-300'>Select</button>
+                <button onClick={() => handleSelectCourse(course)} className='text-2xl rounded-lg mt-12 w-[306px] h-[50px] bg-sky-300'>Select</button>
                 
                 
             </div>
@@ -40,8 +46,8 @@ const Home = () => {
                 
                 }
            </div>
-           <div className="cart mt-12 w-[430px] mx-auto">
-            <h2>this is cart</h2>
+           <div className="cart mt-16 mr-7 w-[430px] mx-auto">
+            <Cart selectCourse ={selectCourse}></Cart>
            </div>
         </div>
     );
