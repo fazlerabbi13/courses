@@ -15,7 +15,14 @@ const Home = () => {
     },[]);
 
     const handleSelectCourse =(course) => {
-            setSelectCourse([...selectCourse,course]);
+            const isExist =selectCourse.find((card) => card.id == course.id);
+            if(isExist){
+              return alert(`exist`)
+            }
+            else{
+                setSelectCourse([...selectCourse,course]); 
+            }
+            
     }
     console.log(selectCourse);
     return (
