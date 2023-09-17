@@ -19,7 +19,7 @@ const Home = () => {
             const isExist =selectCourse.find((card) => card.id == course.id);
             let count = course.credit;
             if(isExist){
-              return alert(`exist`)
+              return alert(`Selected`)
             }
             else{
                 selectCourse.forEach(card =>{
@@ -28,8 +28,8 @@ const Home = () => {
                
                 const hoursRemaining = 20 - count;
                 
-                if(totalCredit>20) {
-                    return alart("Your credit limitations over")
+                if(totalCredit>=20) {
+                    return alert("Your credit limitations over")
                 }
                 else{
                     setTotalCredit(count);
